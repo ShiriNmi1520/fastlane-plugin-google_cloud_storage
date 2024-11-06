@@ -11,14 +11,14 @@ Metrics/BlockLength:
   Enabled: false
 
 # certificate_1 is an okay variable name
-Style/VariableNumber:
+Naming/VariableNumber:
   Enabled: false
 
 # This is used a lot across the fastlane code base for config files
 Style/MethodMissing:
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Enabled: false
 
 Security/Eval:
@@ -61,7 +61,7 @@ Style/AlignHash:
   Enabled: false
 
 # HoundCI doesn't like this rule
-Style/DotPosition:
+Layout/DotPosition:
   Enabled: false
 
 # We allow !! as it's an easy way to convert ot boolean
@@ -123,7 +123,7 @@ Metrics/ClassLength:
 
 
 # Configuration parameters: AllowURI, URISchemes.
-Metrics/LineLength:
+Layout/LineLength:
   Max: 370
 
 # Configuration parameters: CountKeywordArgs.
@@ -163,7 +163,7 @@ Lint/ParenthesesAsGroupedExpression:
 
 # This would reject is_ in front of methods
 # We use `is_supported?` everywhere already
-Style/PredicateName:
+Naming/PredicateName:
   Enabled: false
 
 # We allow the $
@@ -171,7 +171,7 @@ Style/PerlBackrefs:
   Enabled: false
 
 # Disable '+ should be surrounded with a single space' for xcodebuild_spec.rb
-Style/SpaceAroundOperators:
+Layout/SpaceAroundOperators:
   Exclude:
     - '**/spec/actions_specs/xcodebuild_spec.rb'
 
