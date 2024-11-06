@@ -3,6 +3,7 @@ lane :test do |options|
   keyfile = options[:keyfile] || UI.input('Please enter Google Cloud Storage keyfile: ')
   bucket = options[:bucket] || UI.input('Please enter Google Cloud Storage bucket: ')
   file_to_upload = options[:upload_path] || UI.input('Please enter path for file to upload: ')
+  destination_path = options[:destination_path] || UI.input)('Please enter destination for file to place on Google Cloud Storage bucket: ')
   file_to_download = options[:download_file_name] || UI.input('Please enter name for file to download: ')
 
   if file_to_upload
@@ -11,6 +12,7 @@ lane :test do |options|
       keyfile: keyfile,
       bucket: bucket,
       content_path: file_to_upload
+      destination_path: destination_path
     )
   end
 
