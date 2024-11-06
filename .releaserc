@@ -1,0 +1,15 @@
+{
+  "release": {
+    "branches": ["main"]
+  }
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@webhippie/semantic-release-rubygem",
+      {
+        "gemPublish": false
+      }
+    ]
+  ]
+}
