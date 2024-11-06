@@ -68,6 +68,11 @@ module Fastlane
                                        description: "Destination path for file to upload, if not specified, file will be uploaded to Root directory",
                                        optional: true,
                                        type: String,
+                                       verify_block: proc do |value|
+                                         if !value.nil? || !value.empty?
+                                           "%s%s" % [value, File.basename(params[:content_path])]
+                                         end
+                                       end,
                                        default_value: File.basename(params[:content_path])
           ),
         ]
