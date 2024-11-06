@@ -1,9 +1,10 @@
 {
   "release": {
-    "branches": ["main"]
-  }
+    "branches": ["master"]
+  },
   "plugins": [
     "@semantic-release/commit-analyzer",
+    "semantic-release-gitmoji",
     "@semantic-release/release-notes-generator",
     [
       "@webhippie/semantic-release-rubygem",
