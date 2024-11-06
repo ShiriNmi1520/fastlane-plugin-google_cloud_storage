@@ -6,10 +6,8 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-packages:
-          install-yarn: true
-      - node/run:
-          yarn-run: build
+      - run: yarn install --frozen-lockfile
+      - run: yarn semantic-release
 
 workflows:
   create_release:
