@@ -16,7 +16,6 @@ module Fastlane
           bucket_name: params[:bucket]
         )
 
-        file_name = params[:name] || File.basename(params[:content_path])
         bucket.create_file(params[:content_path], params[:destination_path])
       end
 
@@ -71,11 +70,6 @@ module Fastlane
                                        type: String,
                                        default_value: "./"
           ),
-          FastlaneCore::ConfigItem.new(key: :name,
-                                  env_name: "GOOGLE_CLOUD_STORAGE_UPLOAD_NAME",
-                               description: "File name",
-                                  optional: true,
-                                      type: String)
         ]
       end
 
