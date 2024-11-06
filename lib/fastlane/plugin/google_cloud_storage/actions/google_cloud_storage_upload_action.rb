@@ -65,10 +65,10 @@ module Fastlane
                               end),
           FastlaneCore::ConfigItem.new(key: :destination_path,
                                        env_name: "GOOGLE_CLOUD_STORAGE_UPLOAD_DESTINATION_PATH",
-                                       description: "Destination path for file to upload, if not specified, './' will be used",
+                                       description: "Destination path for file to upload, if not specified, file will be uploaded to Root directory",
                                        optional: true,
                                        type: String,
-                                       default_value: "./"
+                                       default_value: File.basename(params[:content_path])
           ),
         ]
       end
