@@ -17,7 +17,7 @@ module Fastlane
         )
 
         file_name = params[:name] || File.basename(params[:content_path])
-        bucket.create_file(params[:content_path], file_name)
+        bucket.create_file(params[:content_path], params[:destination_path])
       end
 
       def self.description
@@ -63,7 +63,14 @@ module Fastlane
                                               elsif File.file?(value) == false
                                                 UI.user_error!("File for path '#{value}' not found")
                                               end
-                                            end),
+                              end),
+          FastlaneCore::ConfigItem.new(key: :destination_path,
+                                       env_name: "GOOGLE_CLOUD_STORAGE_UPLOAD_DESTINATION_PATH",
+                                       description: "Destination path for file to upload, if not specified, './' will be used",
+                                       optional: true,
+                                       type: String,
+                                       default_value: "./"
+          ),
           FastlaneCore::ConfigItem.new(key: :name,
                                   env_name: "GOOGLE_CLOUD_STORAGE_UPLOAD_NAME",
                                description: "File name",
