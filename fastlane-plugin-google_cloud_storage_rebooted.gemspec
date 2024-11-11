@@ -2,7 +2,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/google_cloud_storage/version'
+require 'fastlane/plugin/google_cloud_storage_rebooted/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-google_cloud_storage_rebooted'
