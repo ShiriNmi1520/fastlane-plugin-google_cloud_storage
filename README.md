@@ -3,7 +3,10 @@
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-google_cloud_storage)
 [![Twitter: @fsaragoca](https://img.shields.io/badge/contact-@fsaragoca-blue.svg?style=flat)](https://twitter.com/fsaragoca)
 
-[![CircleCI](https://circleci.com/gh/fsaragoca/fastlane-plugin-google_cloud_storage.svg?style=svg)](https://circleci.com/gh/fsaragoca/fastlane-plugin-google_cloud_storage)
+[![CircleCI](https://circleci.com/gh/ShiriNmi1520/fastlane-plugin-google_cloud_storage/tree/master.svg?style=svg)
+
+## About
+We are currently trying to contact the owner of the origin fork to contribute under the same name @ RubyGems, but we are still waiting for a response. Any help would be appreciated.
 
 ## Getting Started
 
