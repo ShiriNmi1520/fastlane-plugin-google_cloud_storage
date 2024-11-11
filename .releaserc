@@ -9,7 +9,7 @@
     [
       "@webhippie/semantic-release-rubygem",
       {
-        "gemPublish": false
+        "gemPublish": true
       }
     ]
   ]
