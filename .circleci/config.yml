@@ -14,8 +14,6 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - check-changed-files-or-halt:
-          pattern: ^(lib)|(.rb|gemspec)$
       - ruby/install:
           version: 3.0.0
       - run: yarn install --frozen-lockfile
