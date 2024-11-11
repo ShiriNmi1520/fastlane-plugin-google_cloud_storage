@@ -5,6 +5,6 @@ module SpecHelper
 end
 
 require 'fastlane' # to import the Action super class
-require 'fastlane/plugin/google_cloud_storage' # import the actual plugin
+require 'fastlane/plugin/google_cloud_storage_rebooted' # import the actual plugin
 
 Fastlane.load_actions # load other actions (in case your plugin calls other actions or shared values)
