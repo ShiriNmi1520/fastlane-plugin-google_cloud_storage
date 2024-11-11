@@ -1,11 +1,14 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.0
+  ruby: circleci/ruby@2.3.0
 jobs:
   release:
     executor: node/default
     steps:
       - checkout
+      - ruby/install:
+          version: 3.0.0
       - run: yarn install --frozen-lockfile
       - run: yarn semantic-release
 
