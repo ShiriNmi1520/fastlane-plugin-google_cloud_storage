@@ -1,6 +1,6 @@
 {
   "name": "fastlane-plugin-google_cloud_storage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "git@github.com:ShiriNmi1520/fastlane-plugin-google_cloud_storage.git",
   "author": "ShiriNmi1520 <s20026352@gmail.com>",
   "license": "MIT",
