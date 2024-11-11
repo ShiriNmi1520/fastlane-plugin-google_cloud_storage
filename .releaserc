@@ -10,7 +10,7 @@
       "@webhippie/semantic-release-rubygem",
       {
         "gemPublish": true,
-        "versionGlob": "lib/fastlane/plugin/google_cloud_storage/version.rb"
+        "versionGlob": "lib/fastlane/plugin/google_cloud_storage_rebooted/version.rb"
       }
     ]
   ]
