@@ -1,4 +1,4 @@
-require 'fastlane/plugin/google_cloud_storage/version'
+require 'fastlane/plugin/google_cloud_storage_rebooted/version'
 
 module Fastlane
   module GoogleCloudStorage
