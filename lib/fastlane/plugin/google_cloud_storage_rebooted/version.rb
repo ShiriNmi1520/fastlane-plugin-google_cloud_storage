@@ -1,5 +1,5 @@
 module Fastlane
-  module GoogleCloudStorage
-    VERSION = "1.0.3"
+  module GoogleCloudStorageRebooted
+    VERSION = "1.0.4"
   end
 end

@@ -6,7 +6,7 @@ require 'fastlane/plugin/google_cloud_storage_rebooted/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-google_cloud_storage_rebooted'
-  spec.version       = Fastlane::GoogleCloudStorage::VERSION
+  spec.version       = Fastlane::GoogleCloudStorageRebooted::VERSION
   spec.author        = 'Ivan Huang'
   spec.email         = 's20026352@gmail.com'
 
